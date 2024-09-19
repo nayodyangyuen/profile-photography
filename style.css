@@ -1,0 +1,146 @@
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 180px auto;
+    grid-template-areas: 
+        "header"
+        "content1"
+        "content2";
+}
+
+.background{
+    background: #24293D;
+
+}
+.page-header{
+    /* background: lightcoral; */
+    grid-area: header;
+    color: white;
+}
+.page-nav{
+    /* background: lightgreen; */
+    grid-area: nav;
+}
+.page-wall{
+    /* background: lightgray; */
+    grid-area: wall;
+}
+.page-content1{
+    /* background: lightblue; */
+    grid-area: content1;
+}
+.box{
+    display: grid;
+    grid-template-columns: 3fr 2fr ;
+    grid-template-areas: 
+    "profile logo";
+    border-color: #dedede;
+    background: #ffffff;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+.page-footer{
+    background: rgb(46, 46, 46);
+    grid-area: footer;
+}
+.page-content2{
+
+    grid-area: content2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "item-img1 item-img2"
+    "item-img3 item-img4"
+    "item-img5 item-img4";
+    background: #ffffff;
+    border-top-left-radius : 20px;
+    border-top-right-radius : 20px;
+
+    margin-top: 15px;
+  
+
+}
+.logo{
+    grid-area: logo;
+}
+.profile{
+    grid-area: profile;
+    margin-left: 5%;
+    margin-top: 20px;
+    /* margin-bottom: 5%; */
+}
+.item-img1{
+    grid-area: item-img1;
+}
+.item-img2{
+    grid-area: item-img2;
+}
+.item-img3{
+    grid-area: item-img3;
+}
+.item-img4{
+    grid-area: item-img4;
+}
+.item-img5{
+    grid-area: item-img5;
+}
+.img{
+    border-radius: 15px;
+    margin: 10px;
+}
+.shadow{
+    box-shadow: 5px 3px 0px 1px #272727;
+ 
+}   
+.grid-info-page{
+    display: grid;
+    grid-template-rows: 60px 400px 150px auto;
+    grid-template-areas: 
+        "head-info-page"
+        "image-info-page"
+        "info-info-page"
+        "contact-info-page";
+    /* max-width: 700px; */
+}
+.head-info-page{
+    grid-area: head-info-page;
+    color: white;
+}
+.image-info-page{
+    grid-area: image-info-page;
+}
+.info-info-page{
+    grid-area: info-info-page;
+
+    color: white;
+
+}
+.contact-info-page{
+    grid-area: contact-info-page;
+    background-color: #F4F4FC;
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+}
+
+.image-contact{
+    margin: 5px;
+}
+.text-contact{
+    margin: 5px;
+}
+.massager-contact{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #ffffff;
+}
+
+
+div.scroll-container {
+    overflow: auto;
+    white-space: nowrap;
+  }
