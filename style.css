@@ -2,13 +2,11 @@ body{
     font-family: "Mitr", sans-serif;
     font-weight: 380;
     font-style: normal; 
-    font-size: 22px;   
 }
-
 .grid{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 450px auto;
+    grid-template-rows: 150px 350px auto;
     grid-template-areas: 
         "header"
         "content1"
@@ -72,8 +70,6 @@ body{
     border-top-left-radius : 20px;
     border-top-right-radius : 20px;
     margin-top: 15px;
-  
-
 }
 .logo{
     grid-area: logo;
@@ -111,66 +107,69 @@ body{
 }
 .shadow{
     box-shadow: 5px 3px 0px 1px #272727;
- 
-}   
+}  
+
+/* ___________________________________________________________  */
+
 .grid-info-page{
     display: grid;
-    grid-template-rows: auto auto 500px auto;
-    grid-template-areas: 
-        "head-info-page"
-        "image-info-page"
-        "info-info-page"
-        "contact-info-page";
-    /* max-width: 700px; */
 }
 .head-info-page{
-    grid-area: head-info-page;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
     color: white;
     min-height: 100px;
-    font-size: 40px;
     margin-top: 50px;
+    font-size: 40px;
+    margin: 5%;
+    justify-items: between;
 }
 .image-info-page{
-    grid-area: image-info-page;
+    margin: 1px;
 }
-.info-info-page{
-    grid-area: info-info-page;
-    margin-top: 50px;
-    color: white;
+.info-info-page1{
+    color: #ffffff;
+    margin-top:5% ;
     font-size: 30px;
-
 }
-.contact-info-page{
-    grid-area: contact-info-page;
-    background-color: #F4F4FC;
-    display: flex;
-    /* justify-content: space-between; */
-    max-width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    
-}
-
-.image-contact{
-    margin-top: 20px;
-    margin-left: 5%;
-    width: 30%;
-}
-
-.text-contact{
-    margin-top: 20px;
-    width: 40%;
-}
-.massager-contact{
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    background-color: #ffffff;
-    
-    width: 30%;
-}
-
-
-div.scroll-container {
+.scroll-container {
     overflow: auto;
     white-space: nowrap;
-  }
+    margin: 5%;
+    
+}
+.info-info-page2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items:center;  
+    margin: 5%;
+    color: white;
+    font-size: 25px;
+    
+}
+.contact-info-page{
+    background-color: #F4F4FC;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    height: 220px;
+    font-size: 18px;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: F4F4FC; 
+}
+
+.messenger{
+    background-color: #ffffff;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-left: 25%;
+    padding-top: 20px;
+    height: 200px;
+}
+
+.img-profile{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
